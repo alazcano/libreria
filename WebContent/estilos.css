@@ -1,0 +1,221 @@
+@CHARSET "ISO-8859-1";
+body.reg{
+	background-color: #3F51B5;	
+}
+h1{
+	color: white;
+	font-family: cursive;
+	margin-bottom: -5px;
+	
+}
+input[type=text], [type=password] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-align:center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.panelCesta{
+	width: 770px;
+  	height: 100%;
+	background-color: #9FA8DA;
+	border-radius: 20px;
+}
+.panelEstadisticas{
+	width: 600px;
+  	height: 100%;
+	background-color: #9FA8DA;
+	border-radius: 20px;
+}
+
+.panelError{
+
+	width: 500px;
+  	height: 140px;
+	background-color: #9FA8DA;
+	border-radius: 20px;
+	
+}
+.panelIndex{
+
+	width: 220px;
+  	height: 100%;
+	background-color: #9FA8DA;
+	border-radius: 20px;
+	
+}
+.panelRegistro{
+
+	width: 220px;
+  	height: 100%;
+	background-color: #9FA8DA;
+	border-radius: 20px;	
+}
+.panelUsuario{
+
+	width: 400px;
+  	height: 100%;
+  	color: white;
+  	font-size:18px;
+	background-color: #9FA8DA;
+	border-radius: 20px;	
+}
+.panelMenuUsuario{
+	width: 350px;
+  	height: 100%;
+	background-color: #9FA8DA;
+	border-radius: 20px;
+}
+.panelPadre{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	
+}
+a:link {color: white}
+a:VISITED{color: white}
+a:hover {color: red}
+
+.label{
+	 font-size: 18px;
+	color: #E8EAF6;
+}
+.formulario{
+	
+	background-color: #7986CB; 
+	border-radius: 10px;
+}
+
+button {
+ border: none;
+ background: #3F51B5;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+button.normal:hover {
+ background: rgba(0,0,0,0);
+ color: #3F51B5;
+ box-shadow: inset 0 0 0 3px #3F51B5;
+}
+button.carrito{
+ padding: 10px 35px;
+ overflow:hidden;
+}
+button.carrito:before {
+ font-family: FontAwesome;
+ content:url(file://C:/Users/user/workspace/Zlibreria/WebContent/carrito.png);
+ position: absolute;
+ top: 11px;
+ left: -30px;
+ transition: all 200ms ease;
+}
+button.carrito:hover:before {
+ left: 7px;
+}
+
+button.eliminar{
+ padding-top: 10px;
+ padding-left:35px;
+ padding-right: 35px;
+ overflow:hidden;
+}
+button.eliminar:before {
+ font-family: FontAwesome;
+ content:url(file://C:/Users/user/workspace/Zlibreria/WebContent/papelera.png);
+ position: absolute;
+ top: 11px;
+ right: -30px;
+ transition: all 200ms ease;
+}
+button.eliminar:hover:before {
+ right: 7px;
+}
+
+#cesta th {
+    background-color: #3F51B5;
+    padding:5px;
+    border-radius:3px;
+    color: white;
+}
+
+#cesta tr:hover, #cesta tr:nth-child(even):hover {
+	background-color: #7986CB;
+	}
+#cesta tr:nth-child(even) {
+	background-color: #f2f2f2;
+	}
+	
+.libros {
+    display: block;
+    position: relative;
+    left:190px;
+    color:white;
+    text-align:justify;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.libros input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.libros:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.libros input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.libros input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.libros .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

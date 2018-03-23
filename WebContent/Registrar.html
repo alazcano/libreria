@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registro</title>
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+<body class="reg">
+	<div class="panelPadre">
+	<div class="panelRegistro">
+	<form action="Login?opcion=registrar" method="post">
+	<center>
+		<h1>Registro</h1>
+		<input type="text" name="usuario" placeholder="Ususario" value=""
+			minlength="4" maxlength="8">
+		<br> <input type="password" name="password" placeholder="contraseña"
+			value="">
+		<br> <input type="text" name="nombre" placeholder="Nombre"
+			value="">
+		<br> <input type="text" name="apellido" placeholder="Apellido"
+			value="">
+		<br> <input type="text" name="direccion" placeholder="Direccion" value=""><br> 
+		<button class="normal" type="submit">Enviar</button>
+		<button class="normal" type="button" name="volver"  onClick="window.location.href('Index.html');">Volver</button>
+	</form>
+
+	<p></p></center>
+	</div></div>
+</body>
+</html>

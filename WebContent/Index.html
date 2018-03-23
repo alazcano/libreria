@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vista login</title>
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+
+
+
+<body class="reg">
+	<div class="panelPadre">
+		<div class="panelIndex">
+			<form class="contact_form" action="Login?opcion=validar" method="post">
+
+
+				<center><h1>LOGIN</h1>
+				<input type="text" maxlength="20" name="usuario" placeholder="Usuario">
+					<input type="password"	maxlength="20" name="password" value="" placeholder="Contraseña">
+				<button class="normal" type="submit">Enviar</button>
+
+			</form>
+			<button class="normal" type="button" name="registrar"  onClick="window.location.href('Registrar.html');">Registrar</button>
+			<br><br>
+			<button class="normal" type="button" name="guest"  onClick="window.location.href('Login?opcion=guest');">Entrar sin registrarse</button></center>
+		<p>
+		</div>
+
+	</div>
+</body>
+</html>
